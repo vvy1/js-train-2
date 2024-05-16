@@ -149,7 +149,7 @@ console.log(
 // Створюємо функцію з назвою decodeURLComponent, яка приймає один аргумент - urlComponent
 function decodeURLComponent(urlComponent) {
   // Використовуємо вбудовану функцію decodeURIComponent, щоб декодувати введений закодований компонент URL.
-  const decodedComponent = decodeURLComponent(urlComponent);
+  const decodedComponent = decodeURIComponent(urlComponent);
   // Повертаємо декодований компонент URL.
   return decodedComponent;
 }
@@ -166,8 +166,9 @@ console.log(
 // Створюємо функцію з назвою decodeURL, яка приймає один аргумент - url
 function decodeURL(url) {
   // Використовуємо вбудовану функцію decodeURI, щоб декодувати введений закодований URL.
-  // Ця функція повертає декодований URL, замінивши процентне кодування символів на їх реальні значення.
+  const decodedURL = decodeURI(url);
   // Повертаємо декодований URL.
+  return decodedURL;
 }
 
 // Виконуємо функцію з вхідними даними і виводимо результат.
